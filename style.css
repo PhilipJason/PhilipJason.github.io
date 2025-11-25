@@ -1,0 +1,105 @@
+/* 전체 배경, 폰트, wrapper로 푸터 붙이기 */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 헤더 */
+header {
+    background-color: #333333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2em;
+}
+
+/* 네비게이션 */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+nav a.active {
+    background-color: #555;
+}
+
+/* 메인 영역 */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* 갤러리 */
+.gallery {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.gallery.four-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+/* 시 제목 */
+.poem-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    margin-top: auto;
+    color: #ccc;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1024px) {
+    .gallery.four-cols {
+        grid-template-columns: 1fr;
+    }
+}
