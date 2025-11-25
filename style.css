@@ -50,7 +50,7 @@ nav a.active {
 
 /* 메인 영역 */
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
 }
@@ -64,7 +64,7 @@ main {
 }
 
 .gallery.four-cols {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* PC 기본: 한 줄 4개 */
 }
 
 .gallery img {
@@ -98,8 +98,21 @@ footer {
 }
 
 /* 반응형 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .gallery.four-cols {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr); /* 1200px 이하: 3개씩 */
     }
 }
+
+@media screen and (max-width: 800px) {
+    .gallery.four-cols {
+        grid-template-columns: repeat(2, 1fr); /* 800px 이하: 2개씩 */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .gallery.four-cols {
+        grid-template-columns: 1fr; /* 500px 이하: 1개씩 */
+    }
+}
+
