@@ -78,6 +78,10 @@ main {
     margin-bottom: 10px;
     color: #10B981;
 }
+/* 시 본문 */
+.poem-body {
+    text-align: center;
+}
 
 /* 갤러리 */
 .gallery {
@@ -125,4 +129,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
