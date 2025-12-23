@@ -134,6 +134,11 @@ footer {
     color: #ccc;
 }
 
+/* 센터 */
+.center {
+  text-align: center;
+}
+
 /* 반응형 */
 @media screen and (max-width: 1024px) {
     .gallery.four-cols {
@@ -146,6 +151,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
