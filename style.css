@@ -78,7 +78,24 @@ main {
     margin-bottom: 10px;
     color: #ffcc00;
 }
-/* 시 본문 */
+
+/* 수필 제목 */
+. essay-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #bfa202;
+}
+
+/* 단편소설 제목 */
+. Novel-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e6c200;
+}
+
+/* 시 본문 가운데정렬 */
 .poem-body {
     text-align: center;
 }
@@ -129,6 +146,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
