@@ -76,7 +76,7 @@ main {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #10B981;
+    color: #ffcc00;
 }
 /* 시 본문 */
 .poem-body {
@@ -129,5 +129,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
